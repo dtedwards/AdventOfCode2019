@@ -51,10 +51,10 @@ const calcFuel = (modules) => {
 
   for (var i = 0; i < modules.length; i++) {
     var mass = modules[i];
-    console.log(mass);
-    if (mass != 0) {
+    //console.log(mass);
+    //if (mass != 0) {
       sum += Math.floor((mass/3) - 2);
-    }
+    //}
   };
 
   return sum;
