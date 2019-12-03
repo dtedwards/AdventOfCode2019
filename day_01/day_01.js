@@ -15,7 +15,7 @@ const calcFuelTest = (tests) => {
   return sum;
 };
 
-console.log(calcFuelTest(testArray));
+console.log("testValues: " +calcFuelTest(testArray));
 
 //PART ONE
 const modulesString1 =
@@ -51,10 +51,10 @@ const calcFuel = (modules) => {
   return sum;
 };
 
-console.log(calcFuel(modulesArray1));
+console.log("modulesArray1: " + calcFuel(modulesArray1));
 
-console.log(calcFuel(modulesArray2));
+console.log("modulesArray2: " + calcFuel(modulesArray2));
 
-console.log(calcFuel(masses1));
+console.log("input1: " + calcFuel(masses1));
 
-console.log(calcFuel(masses2));
+console.log("input2: " +calcFuel(masses2));
