@@ -37,15 +37,24 @@ const modulesString2 =
 
 const modulesArray2 = modulesString2.split(" ").map(string => parseInt(string));
 
-const masses1 = fs.readFileSync('input1.txt','utf8').split('\n');
-const masses2 = fs.readFileSync('input2.txt','utf8').split('\n');
+let masses1 = fs.readFileSync('input1.txt','utf8').split('\n');
+let masses2 = fs.readFileSync('input2.txt','utf8').split('\n');
+
+console.log("modulesArray1: " + modulesArray1.length);
+console.log("modulesArray2: " + modulesArray2.length);
+console.log("modulesString1: " + masses1.length);
+console.log("modulesString2: " + masses2.length);
+
 
 const calcFuel = (modules) => {
   var sum = 0;
 
   for (var i = 0; i < modules.length; i++) {
     var mass = modules[i];
-    sum += Math.floor((mass/3) - 2);
+    console.log(mass);
+    if (mass != 0) {
+      sum += Math.floor((mass/3) - 2);
+    }
   };
 
   return sum;
